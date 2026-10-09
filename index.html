@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Clarissa ❤️ Dari Zunun</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    background: linear-gradient(160deg, #080d2b, #301447, #090b20);
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 55px 22px;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: #ffb8d9;
+    font-size: 36px;
+    margin: 20px 0;
+    text-shadow: 0 0 20px #ff4fa3;
+}
+
+.subtitle {
+    color: #ffe2ef;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.heart {
+    font-size: 65px;
+    animation: beat 1.2s infinite;
+    filter: drop-shadow(0 0 15px #ff4081);
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.card {
+    margin-top: 28px;
+    padding: 25px;
+    background: rgba(255,255,255,.09);
+    border: 1px solid rgba(255,190,220,.35);
+    border-radius: 22px;
+    box-shadow: 0 8px 35px #0005;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff4389, #a54bff);
+    box-shadow: 0 0 20px #ff438966;
+    cursor: pointer;
+}
+
+#pesan {
+    display: none;
+    margin-top: 25px;
+    line-height: 2;
+    color: #ffe0ef;
+    animation: muncul 1.2s ease;
+}
+
+@keyframes muncul {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bintang {
+    position: fixed;
+    color: white;
+    animation: jatuh linear infinite;
+    opacity: .7;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes jatuh {
+    from { transform: translateY(-10vh); }
+    to { transform: translateY(110vh); }
+}
+
+footer {
+    margin-top: 35px;
+    color: #f5bddc;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="heart">💗</div>
+
+    <h1>Semangat, Clarissa🎖️</h1>
+
+    <p class="subtitle">
+        Untuk kamu yang sedang berjuang,<br>
+        dari seseorang yang ingin melihatmu tersenyum.
+    </p>
+
+    <div class="card">
+        Clarissa, 🌷<br><br>
+
+        Jika hari ini terasa berat, jangan menyerah.
+        Kamu sudah melewati begitu banyak hal
+        untuk sampai di titik ini.
+
+        <br><br>
+
+        Tidak apa-apa jika kamu lelah.
+        Tidak apa-apa jika kamu ingin menangis.
+        Kamu tidak harus selalu terlihat kuat
+        untuk menjadi seseorang yang hebat.
+
+        <br><br>
+
+        Ingatlah, setelah malam yang panjang,
+        selalu ada kesempatan untuk melihat matahari terbit.
+        Jadi, istirahatlah jika perlu,
+        tetapi jangan pernah meremehkan kekuatan dirimu sendiri.
+    </div>
+
+    <button onclick="bukaPesan()">
+        💌 Pesan Spesial dari Zunun
+    </button>
+
+    <div id="pesan">
+        <h2>Untuk Clarissa,by Zunun</h2>
+        <br>
+
+        Aku mungkin tidak selalu bisa berada
+        di sampingmu setiap saat.
+        Namun, aku berharap kamu selalu ingat
+        bahwa dirimu berharga dan pantas bahagia.
+
+        <br><br>
+
+        Aku tidak ingin kamu tersenyum hanya karena aku.
+        Aku ingin kamu menemukan alasan untuk tersenyum
+        dari dalam dirimu sendiri.
+
+        <br><br>
+
+        Jika suatu hari kamu merasa dunia terlalu berat,
+        semoga kamu ingat bahwa kamu masih punya
+        harapan, mimpi, dan masa depan yang layak diperjuangkan.
+
+        <br><br>
+
+        <em>
+        "Tetaplah menjadi Clarissa yang kuat,
+        bukan karena hidup selalu mudah,
+        tetapi karena kamu layak mendapatkan
+        hari-hari yang lebih indah."
+        </em>
+
+        <br><br>
+
+        Dan jika memang takdir mengizinkan,
+        Zunun berharap bisa menjadi seseorang
+        yang ikut menemani perjalananmu,
+        mendukung impianmu, dan menjaga senyummu
+        dengan tulus.
+
+        <br><br>
+
+        Semangat terus, Clarissa.
+        Satu langkah kecil hari ini pun tetap berarti.
+
+        <br><br>
+
+        <strong>Dengan doa dan ketulusan,</strong><br>
+        <span style="color:#ff9bc8;font-size:25px">
+            Zunun 💗
+        </span>
+    </div>
+
+    <footer>
+        Dibuat khusus untuk Clarissa ✨<br>
+        Semoga esok membawa lebih banyak kebahagiaan.
+    </footer>
+</div>
+
+<script>
+function bukaPesan() {
+    const pesan = document.getElementById("pesan");
+
+    if (pesan.style.display === "block") {
+        pesan.style.display = "none";
+    } else {
+        pesan.style.display = "block";
+        pesan.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    }
+}
+
+// Animasi bintang dan hati
+const simbol = ["✦", "✨", "♡", "♥"];
+
+for (let i = 0; i < 35; i++) {
+    const bintang = document.createElement("div");
+    bintang.className = "bintang";
+    bintang.textContent =
+        simbol[Math.floor(Math.random() * simbol.length)];
+
+    bintang.style.left = Math.random() * 100 + "vw";
+    bintang.style.fontSize = (10 + Math.random() * 16) + "px";
+    bintang.style.animationDuration = (5 + Math.random() * 10) + "s";
+    bintang.style.animationDelay = (Math.random() * 8) + "s";
+
+    document.body.appendChild(bintang);
+}
+</script>
+
+</body>
+</html>
